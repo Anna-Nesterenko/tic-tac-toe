@@ -7,6 +7,9 @@ const overlay = document.getElementById('overlay');
 const bntClose = document.getElementById('btn-close');
 
 area.addEventListener('click', e => {
+  if (e.target.innerHTML) {
+    return;
+  }
   if (e.target.className === 'box') {
     move % 2 === 0 ? (e.target.innerHTML = 'X') : (e.target.innerHTML = '0');
     move++;
