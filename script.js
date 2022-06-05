@@ -47,7 +47,7 @@ const check = () => {
       result = 'нулики';
       prepareResult(result);
     }
-    if (move === 9) {
+    if (move === 9 && !arr) {
       result = 'Нічия';
       prepareResult2(result);
     }
