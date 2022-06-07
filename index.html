@@ -6,29 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <h1 class="title">Хрестики-нулики</h1>
-    <div class="area-wrapper">
-      <ul id="area">
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-        <li class="box"></li>
-      </ul>
-    </div>
-    <div id="modal-result-wrapper">
-      <div id="overlay"></div>
-      <div id="modal-window">
-        <div id="content">content</div>
-        <button id="btn-close">Почни нову гру</button>
-      </div>
-    </div>
+    <main class="background">
+      <section class="title">
+        <h1>Хрестики-нулики</h1>
+      </section>
+      <section class="display">Ход гравця <span class="display-player playerX"> X</span></section>
+      <section class="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+      </section>
+      <section class="display announcer hide"></section>
+      <section class="controls">
+        <button id="reset">Почни нову гру</button>
+      </section>
+    </main>
     <script src="script.js" type="module"></script>
   </body>
 </html>
